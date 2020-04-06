@@ -3,7 +3,7 @@ import plotly.graph_objs as go
 import pandas as pd
 
 # Load CSV file from Datasets folder
-df = pd.read_csv('../Datasets/CoronaTimeSeries.csv')
+df = pd.read_csv('../Datasets/Weather2014-15.csv.csv')
 
 # Preparing data
 data = [go.Heatmap(x=df['Day'], y=df['WeekofMonth'], z=df['Recovered'].values.tolist(), colorscale='Jet')]

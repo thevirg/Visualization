@@ -14,6 +14,9 @@ df2 = pd.read_csv('../Datasets/Olympic2016Rio.csv')
 app = dash.Dash()
 
 # Bar chart data
+#Pulls the country names from the file, then iterates through the result and puts it in an array. This array is then
+#used to create the options dropdown in the interactive bar chart
+
 options_df = pd.read_csv('../Datasets/Olympic2016Rio.csv', usecols=['NOC'])
 barchart_options = []
 for x in range(0,options_df.size):
